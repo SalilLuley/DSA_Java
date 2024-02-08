@@ -3,9 +3,10 @@ package BinarySearch;
 public class Ceiling {
     public static void main(String[] args) {
         int[] arr = {1,2,3,4,5,10,20,30,40,50,60,100};
-        int target = 60;
+        int target = 101;
         int ceilingIndex = cealing(arr, target);
-        System.out.println(arr[ceilingIndex]);
+        System.out.println(ceilingIndex >= arr.length ? -1 : arr[ceilingIndex]);
+
 
     }
     //Find the ceiling of a number

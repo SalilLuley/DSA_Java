@@ -3,10 +3,10 @@ package BinarySearch;
 public class Floor {
     public static void main(String[] args) {
         int[] arr = {1,2,3,4,5,10,20,30,40,50,60,100};
-        int target = 55;
+        int target = 0;
 
         int floorIndex = floor(arr, target);
-        System.out.println(arr[floorIndex]);
+        System.out.println(floorIndex != -1 ? arr[floorIndex] : -1);
 
     }
 
